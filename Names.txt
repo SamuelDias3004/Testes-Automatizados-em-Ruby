@@ -1,0 +1,51 @@
+Cenários de testes automatizados 
+
+Teste @login - (validação de login)
+O que o teste faz ?
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta.
+
+Teste @sem_email - (Tentativa de login sem o email)
+R: Entra no site (homolrhapp), escreve a senha no campo determinado, clica no botão entrar realizando a tentativa de logar sem o email e faz a verificação da mensagem de alerta informando que o "E-mail está incorreto".
+
+Teste @sem_senha - (Tentativa de login sem a senha)
+R: Entra no site (homolrhapp), escreve o email no campo determinado,clica no botão entrar realizando a tentativa de logar sem senha e faz a verificação da mensagem de alerta informando que a "Senha incorreta".
+
+Teste @email_ou_senha_incorreto (Tentativa de login com email ou senha incorreto)
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados faltando alguma informação ou de forma incorreta, clica no botão entrar realizando a tentativa de logar com email ou senha incorreta e faz a verificação do pop-up da mensagem de erro "Usuário e/ou senha inválido ou não cadastrados!" 
+
+Teste @selecionar_empresa_ADM (Validação de selecionar empresa e entrar no dashboard de configurações como ADM MASTER)
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta.
+
+Teste @selecionar_empresa_ouvidor (Validação de selecionar empresa e entrar no dashboard de configurações como ouvidor)
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como OUVIDOR e verifica se está na pagina correta.
+
+Teste @empresa_nao_cadastrada (Validação de verificação em caso da empresa não estar cadastrada)
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa não existente no campo determinado e faz a verificação da informação de "Não há nenhuma empresa cadastrada"
+
+Teste @cadastro_empresa (Realiza o cadastro de uma empresa com cnpj verificado)
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, clica no botão de "Nova empresa" Preenche a informação da nova empresa nos campos determinados e Cadastra a nova empresa.
+
+Teste @novo_colaborador
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em colaborador, clica em colaboradores, clica em novo colaborador preenche o dados do novo colaborador e cadastra o novo colaborador.
+
+Teste @novo_comunicado
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em comunicados, clica em novo comunicado, preenche os dados do novo comunicado e cadastra o novo comunicado.
+
+Teste @nova_enquete
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em enquetes, clica em nova enquete, preenche os dados da nova enquete e cadastra a nova enquete.
+
+@nova_enquete_resp_curta  
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em enquetes, clica em nova enquete, preenche os dados da nova enquete, seleciona enquete como resposta curta e cadastra a nova enquete.
+
+@nova_enquete_resp_longa
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em enquetes, clica em nova enquete, preenche os dados da nova enquete, seleciona enquete como resposta longa e cadastra a nova enquete.
+
+@nova_enquete_mult_escolha
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em enquetes, clica em nova enquete, preenche os dados da nova enquete, seleciona enquete como multipla escolha e cadastra a nova enquete.
+
+@nova_enquete_esc_unica
+R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em enquetes, clica em nova enquete, preenche os dados da nova enquete, seleciona enquete como escolha única  e cadastra a nova enquete.
+
+Teste @novo_normativo
+R: R: Entra no site (homolrhapp), escreve login e senha nos campos determinados, clica no botão entrar, é direcionado para a pagina de seleção de empresas e verifica se está na pagina correta, escreve o nome da empresa no campo determinado seleciona a empresa, seleciona a entrada como ADM MASTER, entra na pagina da empresa como ADM MASTER e verifica se está na pagina correta, clica em comunicação, clica em normativos, clica em novo normativo, preenche os dados do novo normativo e cadastra o novo normativo.
+
